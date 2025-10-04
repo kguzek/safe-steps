@@ -8,6 +8,9 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./frontend
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -18,12 +21,14 @@ jobs:
         uses: pnpm/action-setup@v2
         with:
           version: 10
+          package_json_file: ./frontend/package.json
 
       - name: Setup node
         uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: "pnpm"
+          cache-dependency-path: ./frontend/pnpm-lock.yaml
 
       - name: Setup build cache
         uses: actions/cache@v4
@@ -32,9 +37,6 @@ jobs:
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-${{ hashFiles('**/*.ts', '**/*.tsx') }}
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-
-
-      - name: Enter frontend directory
-        run: cd frontend
 
       - name: Install dependencies
         run: pnpm i
