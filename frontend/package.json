@@ -9,7 +9,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint .",
-    "prepare": "husky || true",
+    "prepare": "cd .. && husky || true",
     "start": "next start",
     "typecheck": "tsc --noEmit"
   },
