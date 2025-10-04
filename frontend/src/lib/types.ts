@@ -1,5 +1,3 @@
-import type { LatLngExpression } from "leaflet";
-
 export type DangerLevel = "low" | "medium" | "high";
 
 interface DangerZoneWithoutPosition {

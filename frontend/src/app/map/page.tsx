@@ -30,17 +30,10 @@ const dangerZones: DangerZone[] = [
 
 export default function Home() {
   return (
-    <>
-      <DynamicMap
-        position={[48.858345547135826, 2.2943582487893157]}
-        zoom={12}
-        dangerZones={dangerZones}
-      />
-      <div className="absolute top-10 flex w-screen justify-center">
-        <div className="text-alt z-[3000] text-6xl font-bold text-blue-500 text-shadow-2xs text-shadow-black/50">
-          {/* SafeSteps */}
-        </div>
-      </div>
-    </>
+    <DynamicMap
+      position={[48.858345547135826, 2.2943582487893157]}
+      zoom={12}
+      dangerZones={dangerZones}
+    />
   );
 }

@@ -5,6 +5,7 @@ import { QueryProvider } from "@/lib/query-client";
 
 import "./globals.css";
 
+import { Heading } from "@/components/heading";
 import { cn } from "@/lib/utils";
 
 const space_grotesk = Space_Grotesk({
@@ -39,6 +40,7 @@ export default function RootLayout({
             henny_penny.variable,
           )}
         >
+          <Heading />
           {children}
         </body>
       </QueryProvider>

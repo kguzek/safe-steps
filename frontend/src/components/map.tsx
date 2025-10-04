@@ -62,7 +62,12 @@ function DangerMarker({ zone }: { zone: DangerZone }) {
       >
         <Tooltip className="line-clamp-2">{zone.title}</Tooltip>
       </Marker>
-      <SheetContent className="z-[2000]" side="left">
+      <SheetContent
+        className={cn("z-[2000] my-10 h-[calc(100%-80px)] rounded-lg transition-all", {
+          "mx-10": isOpen,
+        })}
+        side="left"
+      >
         <SheetHeader>
           <SheetTitle>{zone.title}</SheetTitle>
           <SheetDescription>{zone.description}</SheetDescription>
