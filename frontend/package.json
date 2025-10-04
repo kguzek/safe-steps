@@ -11,12 +11,15 @@
     "lint": "eslint .",
     "prepare": "cd .. && husky || true",
     "start": "next start",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev"
   },
   "lint-staged": {
     "*": "prettier -w --ignore-unknown"
   },
   "dependencies": {
+    "@auth/prisma-adapter": "^2.10.0",
     "@prisma/client": "^6.16.3",
     "@radix-ui/react-slot": "^1.2.3",
     "@tanstack/react-query": "^5.90.2",
@@ -24,6 +27,7 @@
     "clsx": "^2.1.1",
     "lucide-react": "^0.544.0",
     "next": "15.5.4",
+    "next-auth": "5.0.0-beta.29",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "tailwind-merge": "^3.3.1",
