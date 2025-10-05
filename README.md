@@ -2,6 +2,12 @@
 
 Projekt Safe Steps w kategorii Travel.
 
+## Live demo
+
+<https://safe-steps.b.solvro.pl>
+
+<img width="911" height="581" alt="image" src="https://github.com/user-attachments/assets/6cd71f06-be11-4f66-835a-ecb874bdee3a" />
+
 ## Zespół
 
 - [Konrad Guzek](https://github.com/kguzek)
