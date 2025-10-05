@@ -18,7 +18,14 @@ interface RawData {
 
 const geocoder = NodeGeocoder({
   // @ts-expect-error idk
-  fetch: globalThis.fetch.bind(globalThis),
+  fetch: (url, init) => {
+    const newinit = {
+      ...init,
+      headers: { ...init?.headers, "User-Agent": "SolvroGen-HackYeah-2025-v1.0.0" },
+    };
+    // @ts-expect-error idk
+    return fetch(url.toString(), newinit);
+  },
   provider: "openstreetmap",
 });
 
