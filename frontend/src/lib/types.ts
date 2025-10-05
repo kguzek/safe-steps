@@ -1,12 +1,11 @@
 export type DangerLevel = "low" | "medium" | "high";
 
-interface DangerZoneWithoutPosition {
+export interface DangerZone {
   address?: string;
   title: string;
   description: string;
   level: DangerLevel;
-}
-
-export interface DangerZone extends DangerZoneWithoutPosition {
+  date: Date;
   position: [number, number];
+  url: string;
 }

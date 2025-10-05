@@ -1,0 +1,59 @@
+[
+  {
+    "labels": {
+      "miejsce": "Scottish Parliament, Holyrood, Edinburgh, Scotland; District: City of Edinburgh",
+      "data": "2022-09-12T17:12:00+00:00",
+      "szacowany_czas_zakonczenia": "2022-09-12T21:00:00+00:00",
+      "poziom_zagrozenia": 2,
+      "komfort": 3,
+      "podsumowanie": "Protesty w Szkocji; aresztowania policji",
+      "adres_url": "https://www.reuters.com/world/uk/scottish-police-make-three-arrests-over-protests-following-queens-death-2022-09-12/",
+      "miejsce_warning": "miejsce zbyt ogólne – rozważ doprecyzowanie lub oszacowanie"
+    }
+  },
+  {
+    "labels": {
+      "miejsce": "Intersection of 16th St and J St, Downtown Sacramento, Sacramento County, California, USA",
+      "data": "2022-09-12T00:00:00+00:00",
+      "szacowany_czas_zakonczenia": "2022-09-12T18:00:00-07:00",
+      "poziom_zagrozenia": 3,
+      "komfort": 3,
+      "podsumowanie": "Wydarzenie lokalne; brak podanych szczegółów.",
+      "adres_url": "https://www.capradio.org/news/npr/story?storyid=1122379162"
+    }
+  },
+  {
+    "labels": {
+      "miejsce": "Parliament Square, Westminster, London, UK",
+      "data": "2022-09-11T19:06:00+01:00",
+      "szacowany_czas_zakonczenia": "2022-09-11T21:00:00+01:00",
+      "poziom_zagrozenia": 2,
+      "komfort": 3,
+      "podsumowanie": "Protest republikański; aresztowania podczas proklamacji.",
+      "adres_url": "https://www.theguardian.com/uk-news/2022/sep/11/republican-protesters-arrested-king-charles-proclamation-events"
+    }
+  },
+  {
+    "labels": {
+      "miejsce": "Tallaght Stadium, Tallaght, Dublin 24, Ireland",
+      "data": "2022-09-09T09:50:00+01:00",
+      "szacowany_czas_zakonczenia": "2022-09-09T12:00:00+01:00",
+      "poziom_zagrozenia": 1,
+      "komfort": 2,
+      "podsumowanie": "Śmierć królowej Elżbiety II; reakcje Shamrock Rovers.",
+      "adres_url": "https://www.independent.co.uk/news/world/europe/shamrock-rovers-irish-football-queen-elizabeth-death-b2163840.html"
+    }
+  },
+  {
+    "labels": {
+      "miejsce": "St James's Palace, Pall Mall, City of Westminster, London",
+      "data": "2022-09-11T19:06:00+01:00",
+      "szacowany_czas_zakonczenia": "2022-09-11T21:30:00+01:00",
+      "poziom_zagrozenia": 2,
+      "komfort": 3,
+      "podsumowanie": "Protest republikański; zatrzymania; niewielkie zakłócenia.",
+      "adres_url": "https://www.theguardian.com/uk-news/2022/sep/11/republican-protesters-arrested-king-charles-proclamation-events",
+      "miejsce_warning": "miejsce zbyt ogólne – rozważ doprecyzowanie lub oszacowanie"
+    }
+  }
+]
