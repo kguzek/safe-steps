@@ -4,9 +4,9 @@ Projekt Safe Steps w kategorii Travel.
 
 ## Live demo
 
-<https://safe-steps.b.solvro.pl>
-
 <img width="911" height="581" alt="image" src="https://github.com/user-attachments/assets/6cd71f06-be11-4f66-835a-ecb874bdee3a" />
+
+<https://safe-steps.b.solvro.pl>
 
 ## Zespół
 
@@ -25,6 +25,7 @@ Aplikacja webowa napisana w Next.js, z package managerem pnpm.
 Należy zainstalować Node.js i/lub pnpm'a, można m.in. uzyć `corepack enable`, który sam instaluje wymagany manadżer pakietów. Następnie:
 
 ```bash
+cd frontend
 pnpm i
 pnpm db:generate
 pnpm build
