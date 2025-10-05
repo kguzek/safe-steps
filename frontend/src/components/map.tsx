@@ -73,7 +73,12 @@ function DangerMarker({ zone }: { zone: DangerZone }) {
           <SheetDescription>{zone.description}</SheetDescription>
         </SheetHeader>
         <div className="flex justify-center">
-          <div className="flex flex-col items-stretch gap-5 px-2">
+          <div className="flex flex-col items-stretch gap-5 px-4">
+            <p>Lokalizacja: {zone.address}</p>
+            <p>Data wydarzenia: {zone.date.toLocaleString()}</p>
+            <Button asChild variant="link">
+              <Link href={zone.url}>Więcej informacji</Link>
+            </Button>
             <Button asChild>
               <Link
                 href={`https://www.google.com/maps/dir/?api=1&destination=${zone.position.join(",")}`}
